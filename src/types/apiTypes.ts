@@ -1,5 +1,6 @@
 export interface AnalyzeRequest {
     query: string;
+    bearerToken: string;
 }
 
 export interface AnalyzeResponse {

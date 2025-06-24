@@ -20,6 +20,7 @@ export const AnalysisResult: React.FC<AnalysisResultProps> = ({
                 return (
                     <div key={index} className="mb-4">
                         <h3 className="font-semibold text-gray-900 mb-2 flex items-center">
+                            {getIconForSection(title)}
                             {title.trim()}
                         </h3>
                         <p className="text-gray-700 leading-relaxed">

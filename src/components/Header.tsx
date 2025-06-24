@@ -23,10 +23,10 @@ export const Header: React.FC = () => {
                         <BarChart3 className="w-8 h-8 text-primary-600 mr-3" />
                         <div>
                             <h1 className="text-xl font-bold text-gray-900">
-                                Campaign Analyzer
+                                Report Analyzer
                             </h1>
                             <p className="text-sm text-gray-600">
-                                AI-Powered Campaign Performance Analysis
+                                AI-Powered Report Analysis
                             </p>
                         </div>
                     </div>

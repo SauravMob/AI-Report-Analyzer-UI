@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Send, Mic, Sparkles } from 'lucide-react';
+import { Send, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 interface QueryInputProps {
