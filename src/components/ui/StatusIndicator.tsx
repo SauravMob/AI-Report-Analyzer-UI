@@ -1,8 +1,8 @@
 import React from 'react';
 import { CheckCircle, XCircle, AlertCircle } from 'lucide-react';
 
-interface StatusIndicatorProps {
-    status: 'healthy' | 'unhealthy' | 'unknown';
+export interface StatusIndicatorProps {
+    status: 'online' | 'offline' | 'checking';
     showText?: boolean;
 }
 
@@ -11,19 +11,19 @@ export const StatusIndicator: React.FC<StatusIndicatorProps> = ({
     showText = true
 }) => {
     const config = {
-        healthy: {
+        online: {
             icon: CheckCircle,
             color: 'text-green-500',
             bgColor: 'bg-green-50',
             text: 'API Healthy'
         },
-        unhealthy: {
+        offline: {
             icon: XCircle,
             color: 'text-red-500',
             bgColor: 'bg-red-50',
             text: 'API Unavailable'
         },
-        unknown: {
+        checking: {
             icon: AlertCircle,
             color: 'text-yellow-500',
             bgColor: 'bg-yellow-50',
